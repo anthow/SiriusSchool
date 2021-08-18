@@ -14,190 +14,107 @@ const IndexPage = ({ data }) => (
  <GatsbyImage image={data.datoCmsHomepage.imageSlider.gatsbyImageData} />
    </figure> 
 
-    <h1 id="school" className="mt-20 text-3xl text-gray-600  text-center mb-12">Sirius School</h1>
+    <h1 id="school" className="mt-20 text-4xl text-siriusblue font-bold  text-center mb-12">Sirius School</h1>
 <section className="w-10/12 m-auto place-content-center items-center gap-4 auto-cols-fr auto-rows-min  grid-cols-2 md:grid "> 
 <figure>
-    <StaticImage
-      src="https://fakeimg.pl/3000/"
-      width={600}
-      height={600}
-      quality={100}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-        className="flex-1"
+   <GatsbyImage image={data.datoCmsHomepage.imageSiriusSchool.gatsbyImageData}
+     />
 
-    />
     </figure>
     <article>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat. Diam in arcu cursus euismod quis viverra.
-         Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. Leo duis ut diam quam nulla porttitor massa id neque. 
-         Viverra vitae congue eu consequat ac felis. </p>
+    <div dangerouslySetInnerHTML={{ __html: data.datoCmsHomepage.texteSiriusSchool }}></div>
+ 
     </article>
 </section>
-<h2 className="mt-20 text-3xl text-gray-600 text-center mb-12" id="formations">Les formations </h2>
+<h2 className="mt-20 text-4xl text-center text-siriusblue font-bold mb-12" id="formations">Les formations </h2>
 <figure className="w-10/12 m-auto">
-    <StaticImage
-      src="https://fakeimg.pl/3000/"
-      width={3000}
-      height={1500}
-      quality={100}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-    />
+<GatsbyImage image={data.datoCmsHomepage.ligneDuTemps.gatsbyImageData} />
+
     </figure>
     <section className="mt-20 w-10/12 m-auto place-content-center items-center auto-cols-fr auto-rows-min gap-y-20 gap-x-20 auto-cols-fr auto-rows-min  grid-cols-2 md:grid "> 
     <figure>
-    <StaticImage
-      src="https://fakeimg.pl/3000/"
-      width={900}
-      height={600}
-      quality={100}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      className=""
-
-    />
+    <GatsbyImage image={data.datoCmsFormationUne.imageFormation.gatsbyImageData}/>
     </figure>
-<article>
-  <h3 className="mb-5  text-gray-600 text-2xl" >Entrepreneuriat  numérique et responsable </h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat. Diam in arcu cursus euismod quis viverra.
-         Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. Leo duis ut diam quam nulla porttitor massa id neque. 
-         Viverra vitae congue eu consequat ac felis.</p>
-      
-      <button className="border p-2 rounded mt-5"> en savoir plus</button>
-</article>
-<article>
+<article className="bg-formationun p-10">
+  <h3 className="mb-5   text-2xl font-bold  text-white" >{data.datoCmsFormationUne.titreFormation} </h3>
+  <div className="text-white" dangerouslySetInnerHTML={{ __html: data.datoCmsFormationUne.resumHomepage }}></div>
 
-<h3 className="mb-5 text-gray-600 text-2xl" >Entrepreneuriat  numérique et responsable </h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat. Diam in arcu cursus euismod quis viverra.
-         Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. Leo duis ut diam quam nulla porttitor massa id neque. 
-         Viverra vitae congue eu consequat ac felis.</p>
+      <button className=" p-2 px-4      bg-white font-bold rounded text-formationun mt-5"> en savoir plus</button>
+</article>
+<article className="bg-formationdeux p-10">
+
+<h3 className="mb-5  text-gray-600 text-2xl font-bold  text-white" >{data.datoCmsFormationDeux.titreFormation} </h3>
+<div className="text-white" dangerouslySetInnerHTML={{ __html: data.datoCmsFormationDeux.resumHomepage }}></div>
+
       
-      <button className="border p-2 rounded mt-5"> en savoir plus</button>
+<button className=" p-2 px-4 bg-white font-bold rounded text-formationdeux mt-5"> en savoir plus</button>
       
 </article>
 <figure>
-    <StaticImage
-      src="https://fakeimg.pl/3000/"
-      width={900}
-      height={600}
-      quality={100}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      className=""
+<GatsbyImage image={data.datoCmsFormationDeux.imageFormation.gatsbyImageData}/>
 
-    />
     </figure> 
     <figure>
-    <StaticImage
-      src="https://fakeimg.pl/3000/"
-      width={900}
-      height={600}
-      quality={100}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      className=""
+    <GatsbyImage image={data.datoCmsFormationTroi.imageFormation.gatsbyImageData}/>
 
-    />
     </figure>
-<article>
+    <article className="bg-formationtrois p-10">
 
-<h3 className="mb-5 text-gray-600 text-2xl" >Entrepreneuriat  numérique et responsable </h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat. Diam in arcu cursus euismod quis viverra.
-         Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. Leo duis ut diam quam nulla porttitor massa id neque. 
-         Viverra vitae congue eu consequat ac felis.</p>
-      
-      <button className="border p-2 rounded mt-5"> en savoir plus</button>
+<h3 className="mb-5  text-gray-600 text-2xl font-bold  text-white" > {data.datoCmsFormationTroi.titreFormation}  </h3>
+<div className="text-white" dangerouslySetInnerHTML={{ __html: data.datoCmsFormationTroi.resumHomepage }}></div>
+
+      <button className=" p-2 px-4 bg-white font-bold rounded text-formationtrois mt-5"> en savoir plus</button>
 </article>
-<article>
 
-<h3 className="mb-5 text-gray-600 text-2xl" >Entrepreneuriat  numérique et responsable </h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat. Diam in arcu cursus euismod quis viverra.
-         Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. Leo duis ut diam quam nulla porttitor massa id neque. 
-         Viverra vitae congue eu consequat ac felis.</p>
+ <article className="bg-formationquatre p-10">
+
+
+<h3 className="mb-5  text-gray-600 text-2xl font-bold  text-white" > {data.datoCmsFormationQuatre.titreFormation} </h3>
+<div className="text-white" dangerouslySetInnerHTML={{ __html: data.datoCmsFormationQuatre.resumHomepage }}></div>
+
       
-      <button className="border p-2 rounded mt-5"> en savoir plus</button>
+      <button className="p-2 px-4 bg-white font-bold rounded text-formationquatre mt-5"> en savoir plus</button>
 </article>
 <figure>
-    <StaticImage
-      src="https://fakeimg.pl/3000/"
-      width={900}
-      height={600}
-      quality={100}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      className=""
+<GatsbyImage image={data.datoCmsFormationQuatre.imageFormation.gatsbyImageData}/>
 
-    />
     </figure> 
     </section>
 
-    <h2 className="mt-20 text-center text-gray-600 text-3xl  mb-12" id="témoignages"> ils sont passé par chez nous  </h2>
+    <h2 className="mt-20 text-center text-siriusblue font-bold text-4xl  mb-12" id="témoignages"> ils sont passé par chez nous  </h2>
 
-     <section className=" w-10/12 m-auto md:grid grid-cols-3 gap-x-20 mb-20" >
+     <section className=" w-10/12 m-auto md:grid grid-cols-3 items-start gap-x-20 mb-20" >
        <article className="flex flex-col align-center">
          <figure className="w-12/12 m-auto mb-10">
-       <StaticImage
-      src="https://fakeimg.pl/3000/"
-      width={300}
-      height={300}
-      quality={100}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      className="rounded-full  "
+   
+<GatsbyImage image={data.datoCmsHomepage.imageTMoignageUn.gatsbyImageData} className="rounded-full"/>
 
-    />
+
+
     </figure>
-    <h3 className=" text-lg text-gray-600 text-center mb-5"> nom de l'apprenant </h3>
-    <p className="text-center italic">Lectus proin nibh nisl condimentum id venenatis a condimentum vitae. 
-    Odio ut enim blandit volutpat maecenas. Viverra ipsum nunc aliquet bibendum. 
-    Varius morbi enim nunc faucibus a pellentesque sit amet porttitor. Enim praesent elementum facilisis leo vel fringilla est ullamcorper. 
-    Odio ut sem nulla pharetra. Tincidunt augue interdum velit euismod in pellentesque massa placerat. </p>
+    <h3 className=" text-lg text-gray-600 text-center mb-5"> {data.datoCmsHomepage.nomTMoignageUn} </h3>
+    <div className="text-center italic text-sm text-gray" dangerouslySetInnerHTML={{ __html: data.datoCmsHomepage.texteTMoignageUn }}></div>
+
        </article>
 
        <article className="flex flex-col align-center">
          <figure className="w-12/12 m-auto mb-10">
-       <StaticImage
-      src="https://fakeimg.pl/3000/"
-      width={300}
-      height={300}
-      quality={100}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      className="rounded-full  "
+         <GatsbyImage image={data.datoCmsHomepage.imageTMoignageDeux.gatsbyImageData} className="rounded-full"/>
 
-    />
     </figure>
-    <h3 className=" text-lg text-gray-600 text-center mb-5"> nom de l'apprenant </h3>
-    <p className="text-center italic">Lectus proin nibh nisl condimentum id venenatis a condimentum vitae. 
-    Odio ut enim blandit volutpat maecenas. Viverra ipsum nunc aliquet bibendum. 
-    Varius morbi enim nunc faucibus a pellentesque sit amet porttitor. Enim praesent elementum facilisis leo vel fringilla est ullamcorper. 
-    Odio ut sem nulla pharetra. Tincidunt augue interdum velit euismod in pellentesque massa placerat. </p>
+    <h3 className=" text-lg text-gray-600 text-center mb-5">{data.datoCmsHomepage.nomTMoignageDeux} </h3>
+    <div className="text-center italic text-sm text-gray" dangerouslySetInnerHTML={{ __html: data.datoCmsHomepage.texteTMoignageDeux }}></div>
+
        </article>
 
        <article className="flex flex-col align-center">
          <figure className="w-12/12 m-auto mb-10">
-       <StaticImage
-      src="https://fakeimg.pl/3000/"
-      width={300}
-      height={300}
-      quality={100}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      className="rounded-full  "
+         <GatsbyImage image={data.datoCmsHomepage.imageTMoignageTrois.gatsbyImageData} className="rounded-full"/>
 
-    />
     </figure>
-    <h3 className=" text-lg text-gray-600 text-center mb-5"> nom de l'apprenant </h3>
-    <p className="text-center italic">Lectus proin nibh nisl condimentum id venenatis a condimentum vitae. 
-    Odio ut enim blandit volutpat maecenas. Viverra ipsum nunc aliquet bibendum. 
-    Varius morbi enim nunc faucibus a pellentesque sit amet porttitor. Enim praesent elementum facilisis leo vel fringilla est ullamcorper. 
-    Odio ut sem nulla pharetra. Tincidunt augue interdum velit euismod in pellentesque massa placerat. </p>
+    <h3 className=" text-lg text-gray-600 text-center mb-5">{data.datoCmsHomepage.nomTMoignageTrois}  </h3>
+    <div className="text-center italic text-sm text-gray" dangerouslySetInnerHTML={{ __html: data.datoCmsHomepage.texteTMoignageTrois }}></div>
+
        </article>
        
 
@@ -207,17 +124,15 @@ const IndexPage = ({ data }) => (
 <section className="bg-forms py-20" id="inscription">
   <div className="w-10/12 m-auto md:grid grid-cols-2 ">
     <article></article>
-  <article >
-  <h2 className=" text-2xl text-gray-600 mb-5"> inscription à la formation</h2>
-  <p className="mb-5">Lectus proin nibh nisl condimentum id venenatis a condimentum vitae. 
-    Odio ut enim blandit volutpat maecenas. Viverra ipsum nunc aliquet bibendum. 
-    Varius morbi enim nunc faucibus a pellentesque sit amet porttitor. Enim praesent elementum facilisis leo vel fringilla est ullamcorper. 
-    Odio ut sem nulla pharetra. Tincidunt augue interdum velit euismod in pellentesque massa placerat. </p>
-    <button className="bg-white border p-2 rounded"> Formulaire d'inscription</button>
+  <article className="bg-inscription p-10 " >
+  <h2 className=" text-2xl text-4xl text-siriusblue mb-5"> inscription à l'une de nos formations</h2>
+  <div dangerouslySetInnerHTML={{ __html: data.datoCmsHomepage.texteInscription }}></div>
+
+    <button className="bg-siriusblue text-white text-bold mt-5 p-2 rounded"> Formulaire d'inscription</button>
     </article>
     </div>
 </section>
-<h2 className="mt-20 text-3xl text-gray-600 text-center mb-12"> contact</h2>
+<h2 className="mt-20 text-4xl text-gray-600 text-center mb-12"> contact</h2>
 <section className="w-6/12 m-auto" id="contact">
 
 <form>
@@ -248,13 +163,73 @@ const IndexPage = ({ data }) => (
 export const query = graphql`
   {
     datoCmsHomepage {
+      texteInscription
       imageSlider {
         gatsbyImageData
         (width:3000
-          height:1000 )
+          height:1000)
+      }
+      texteSiriusSchool
+    imageSiriusSchool {
+      gatsbyImageData(width:800
+        height:600)
+    }
+    ligneDuTemps {
+      gatsbyImageData
+  }
+  nomTMoignageDeux
+    nomTMoignageTrois
+    nomTMoignageUn
+    texteTMoignageDeux
+    texteTMoignageTrois
+    texteTMoignageUn
+    imageTMoignageDeux {
+  
+      gatsbyImageData(width:300
+        height:300)
+    }
+    imageTMoignageTrois {
+      gatsbyImageData(width:300
+        height:300)
+    }
+    imageTMoignageUn {
+      gatsbyImageData(width:300
+        height:300)
+    }
+    }
+    datoCmsFormationUne {
+      titreFormation
+      imageFormation {
+        gatsbyImageData(width:800
+          height:600)
+      }
+            resumHomepage
+      }
+    datoCmsFormationDeux {
+      titreFormation
+      imageFormation {
+        gatsbyImageData(width:800
+          height:600)
+      }
+            resumHomepage
+      }
+  datoCmsFormationTroi {
+      titreFormation
+      imageFormation {
+        gatsbyImageData(width:800
+          height:600)
+      }
+            resumHomepage
+      }
+  datoCmsFormationQuatre {
+      titreFormation
+      imageFormation {
+        gatsbyImageData(width:800
+          height:600)
+      }
+            resumHomepage
       }
     }
-  }
 `
 
 
