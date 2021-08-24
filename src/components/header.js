@@ -24,11 +24,11 @@ return(
   <GatsbyImage image={data.datoCmsLogo.logoSirius.gatsbyImageData} />  </figure> 
     <nav>
       <ul className="flex  text-white space-x-4 ">
-      <li><Link to="#school"  className=" text-siriusblue hover:text-red-500">Sirius School</Link></li>
-      <li><Link to="#formations"  className=" text-siriusblue hover:text-red-500">Les formations</Link></li>
-      <li><Link to="#témoignages"  className=" text-siriusblue hover:text-red-500"> Témoignages</Link></li>
-      <li><Link to="#inscription"  className=" text-siriusblue hover:text-red-500"> Inscription</Link></li>
-      <li><Link to="#contact"  className=" text-siriusblue hover:text-red-500"> contact</Link></li>
+      <li><Link to="/#school"  className=" text-siriusblue hover:text-red-500">Sirius School</Link></li>
+      <li><Link to="/#formations"  className=" text-siriusblue hover:text-red-500">Les formations</Link></li>
+      <li><Link to="/#témoignages"  className=" text-siriusblue hover:text-red-500"> Témoignages</Link></li>
+      <li><Link to="/#inscription"  className=" text-siriusblue hover:text-red-500"> Inscription</Link></li>
+      <li><Link to="/#contact"  className=" text-siriusblue hover:text-red-500"> contact</Link></li>
 
 
       </ul>

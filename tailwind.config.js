@@ -2,7 +2,8 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}'],  
   darkMode: false, // or 'media' or 'class'
   theme: {
-    colors: {
+    
+    extend: {colors: {
       siriusblue :{
         light:'#2e4088',
         DEFAULT:'#2e4088',
@@ -44,8 +45,7 @@ module.exports = {
         dark:'#FFFFFF',
       },
       
-    },
-    extend: {},
+    },},
   },
   variants: {
     extend: {},

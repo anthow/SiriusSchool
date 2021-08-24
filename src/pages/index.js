@@ -8,8 +8,8 @@ import { graphql } from "gatsby"
 
 
 const IndexPage = ({ data }) => (
-  <Layout>
-    <Seo title="Home" />
+    <Layout>
+      <Seo title="Home" />
  <figure>
  <GatsbyImage image={data.datoCmsHomepage.imageSlider.gatsbyImageData} />
    </figure> 
@@ -38,17 +38,20 @@ const IndexPage = ({ data }) => (
 <article className="bg-formationun p-10">
   <h3 className="mb-5   text-2xl font-bold  text-white" >{data.datoCmsFormationUne.titreFormation} </h3>
   <div className="text-white" dangerouslySetInnerHTML={{ __html: data.datoCmsFormationUne.resumHomepage }}></div>
+  <Link to="/entreprenariat-numerique">  
 
       <button className=" p-2 px-4      bg-white font-bold rounded text-formationun mt-5"> en savoir plus</button>
+      </Link>
+
 </article>
 <article className="bg-formationdeux p-10">
 
-<h3 className="mb-5  text-gray-600 text-2xl font-bold  text-white" >{data.datoCmsFormationDeux.titreFormation} </h3>
+<h3 className="mb-5  text-2xl font-bold  text-white" >{data.datoCmsFormationDeux.titreFormation} </h3>
 <div className="text-white" dangerouslySetInnerHTML={{ __html: data.datoCmsFormationDeux.resumHomepage }}></div>
+<Link to="/communication-visuelle ">  
 
-      
 <button className=" p-2 px-4 bg-white font-bold rounded text-formationdeux mt-5"> en savoir plus</button>
-      
+</Link>
 </article>
 <figure>
 <GatsbyImage image={data.datoCmsFormationDeux.imageFormation.gatsbyImageData}/>
@@ -60,7 +63,7 @@ const IndexPage = ({ data }) => (
     </figure>
     <article className="bg-formationtrois p-10">
 
-<h3 className="mb-5  text-gray-600 text-2xl font-bold  text-white" > {data.datoCmsFormationTroi.titreFormation}  </h3>
+<h3 className="mb-5   text-2xl font-bold  text-white" > {data.datoCmsFormationTroi.titreFormation}  </h3>
 <div className="text-white" dangerouslySetInnerHTML={{ __html: data.datoCmsFormationTroi.resumHomepage }}></div>
 
       <button className=" p-2 px-4 bg-white font-bold rounded text-formationtrois mt-5"> en savoir plus</button>
@@ -69,7 +72,7 @@ const IndexPage = ({ data }) => (
  <article className="bg-formationquatre p-10">
 
 
-<h3 className="mb-5  text-gray-600 text-2xl font-bold  text-white" > {data.datoCmsFormationQuatre.titreFormation} </h3>
+<h3 className="mb-5  text-2xl font-bold  text-white" > {data.datoCmsFormationQuatre.titreFormation} </h3>
 <div className="text-white" dangerouslySetInnerHTML={{ __html: data.datoCmsFormationQuatre.resumHomepage }}></div>
 
       
