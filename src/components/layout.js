@@ -25,10 +25,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`}  />
+      <Header className="w-12/12" siteTitle={data.site.siteMetadata?.title || `Title`}  />
    
         <main className="w-12/12 m-auto relative">{children}</main>
-        <Footer /> 
+        <Footer className="w-12/12" /> 
     </>
   )
 }
