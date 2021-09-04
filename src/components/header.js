@@ -17,10 +17,10 @@ import { useStaticQuery, graphql } from "gatsby"
     }
   }
 `) 
-return(
+                      return(
   <nav className=" fixed flex items-center justify-between flex-wrap bg-teal-500 p-6  sticky top-0 z-50  font-bold bg-white">
 
-  <div className="flex items-center flex-shrink-0 text-white mr-6">
+  <div className="flex items-center   -shrink-0 text-white mr-6">
   <figure className="md:hidden">
   <GatsbyImage image={data.datoCmsLogo.logoSirius.gatsbyImageData} />  </figure> 
     <svg className="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
@@ -39,7 +39,7 @@ return(
       <li><Link to="/#school"  className=" text-siriusorange hover:text-opacity-70">Sirius School</Link></li>
       <li><Link to="/#formations"  className=" hidden md:block text-siriusorange hover:text-opacity-70">Les formations</Link></li>
       <li className="md:hidden">
-      <button type="button" className=" text-siriusorange hover:text-opacity-70 inline-flex md:hidden justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" 
+      <button type="button" className=" text-siriusorange hover:text-opacity-70 inline-flex md:hidden justify-center w-full rounded-md                         border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" 
       id="menu-button" aria-expanded="true" aria-haspopup="true">
       Formations
       <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">

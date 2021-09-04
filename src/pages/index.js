@@ -17,7 +17,7 @@ const IndexPage = ({ data }) => (
     <Seo title="Home" />
     <figure className="w-12/12">
       <GatsbyImage image={data.datoCmsHomepage.imageSlider.gatsbyImageData} />
-    </figure>
+    </figure> 
 
     <section className="w-10/12 m-auto place-content-center mt-16 md:mt-32 items-center gap-8 auto-cols-fr auto-rows-min  grid-cols-2 md:grid ">
       <figure>
@@ -46,7 +46,7 @@ const IndexPage = ({ data }) => (
       <figure className="order-1">
         <GatsbyImage image={data.datoCmsFormationUne.imageFormation.gatsbyImageData} />
       </figure>
-      <article className="bg-formationun font-bold h-full p-10 order-2 mb-16 md:mb-0">
+      <article className="bg-formationun font-bold h-full p-10 order-2">
         <h3 className="mb-5   text-2xl font-bold  text-white" >{data.datoCmsFormationUne.titreFormation} </h3>
         <div className="text-white" dangerouslySetInnerHTML={{ __html: data.datoCmsFormationUne.resumHomepage }}></div>
         <div className="md:flex   mt-8 md:space-x-8">
@@ -67,7 +67,7 @@ const IndexPage = ({ data }) => (
         </Link>
 
       </article>
-      <article className=" order-4 md: order-3 mb-16 md:mb-0 bg-formationdeux h-full p-10">
+      <article className=" order-4 md: order-3  bg-formationdeux h-full p-10">
 
         <h3 className="mb-5  text-2xl font-bold  text-white" >{data.datoCmsFormationDeux.titreFormation} </h3>
         <div className="text-white" dangerouslySetInnerHTML={{ __html: data.datoCmsFormationDeux.resumHomepage }}></div>
@@ -95,7 +95,7 @@ const IndexPage = ({ data }) => (
         <GatsbyImage image={data.datoCmsFormationTroi.imageFormation.gatsbyImageData} />
 
       </figure>
-      <article className="order-6 mb-16 md:mb-0 bg-formationtrois h-full p-10">
+      <article className="order-6  bg-formationtrois h-full p-10">
 
         <h3 className="mb-5   text-2xl font-bold  text-white" > {data.datoCmsFormationTroi.titreFormation}  </h3>
         <div className="text-white" dangerouslySetInnerHTML={{ __html: data.datoCmsFormationTroi.resumHomepage }}></div>
@@ -187,7 +187,7 @@ const IndexPage = ({ data }) => (
           <h2 className=" text-2xl text-4xl text-siriusblue mb-5"> inscription à l'une de nos formations</h2>
           <div dangerouslySetInnerHTML={{ __html: data.datoCmsHomepage.texteInscription }}></div>
 
-          <button className="bg-siriusorange text-white text-bold hover:opacity-90 mt-6 p-2 rounded"> Formulaire d'inscription</button>
+          <button className="bg-siriusorange text-white text-bold hover:opacity-90 mt-6 p-2 rounded"> s'inscrire</button>
         </article>
       </div>
     </section>
