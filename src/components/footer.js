@@ -1,11 +1,9 @@
 import * as React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 const Footer = () => (
   <footer className=" w-12/12 mt-20 pt-8 bg-white text-siriusblue">
-<section className="w-10/12 m-auto flex justify-evenly  " >
+<section className="w-10/12 m-auto items-center flex flex-col md:flex-row justify-evenly  " >
     <article>
       <h4> Sirius School</h4>
       <p> Avenue Rogier 19</p>
@@ -21,7 +19,7 @@ const Footer = () => (
       placeholder="blurred"
       layout="fixed"
       width={200}
-      height={100}
+      height={150}
     />
 
 <StaticImage

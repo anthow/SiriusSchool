@@ -5,9 +5,9 @@ module.exports = {
     
     extend: {colors: {
       siriusblue :{
-        light:'#2e4088',
-        DEFAULT:'#2e4088',
-        dark:'#2e4088',
+        light:'#2f4187',
+        DEFAULT:'#2f4187',
+        dark:'#2f4187',
       },
       siriusorange :{
         light:'#eb6608',

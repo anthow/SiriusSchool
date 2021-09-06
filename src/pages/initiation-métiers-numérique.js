@@ -1,11 +1,8 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { graphql } from "gatsby"
-import NavForm from "../components/NavForm"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faCalendar,
@@ -16,7 +13,6 @@ import {
 const CommunicationPage = ({ data }) => (
     <Layout>
     <Seo title="Home" />
-<NavForm className="" ></NavForm>  
 <section className=" mt-8 md:mt-20 w-10/12 m-auto place-content-center items-center auto-cols-fr auto-rows-min md:gap-y-20 md:gap-x-20 auto-cols-fr auto-rows-min  grid-cols-2 md:grid ">
 <figure>
 <GatsbyImage className="mb-4 md:mb-0" image={data.datoCmsFormationTroi.imageFormation.gatsbyImageData}/>

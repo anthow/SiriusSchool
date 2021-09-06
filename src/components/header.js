@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
@@ -20,9 +19,9 @@ import { useStaticQuery, graphql } from "gatsby"
                       return(
   <nav className=" fixed flex items-center justify-between flex-wrap bg-teal-500 p-6  sticky top-0 z-50  font-bold bg-white">
 
-  <div className="flex items-center   -shrink-0 text-white mr-6">
+  <div className="flex items-baseline   -shrink-0 text-white mr-6">
   <figure className="md:hidden">
-  <GatsbyImage image={data.datoCmsLogo.logoSirius.gatsbyImageData} />  </figure> 
+  <Link to="/#">"<GatsbyImage image={data.datoCmsLogo.logoSirius.gatsbyImageData} /></Link>  </figure> 
     <svg className="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
   </div>
   <div className="block lg:hidden">
@@ -35,37 +34,38 @@ import { useStaticQuery, graphql } from "gatsby"
 <figure className="hidden md:block">
   <GatsbyImage image={data.datoCmsLogo.logoSirius.gatsbyImageData} />  </figure> 
     <nav>
+
       <ul className="md:flex  text-white md:space-x-4 ">
       <li><Link to="/#school"  className=" text-siriusorange hover:text-opacity-70">Sirius School</Link></li>
-      <li><Link to="/#formations"  className=" hidden md:block text-siriusorange hover:text-opacity-70">Les formations</Link></li>
-      <li className="md:hidden">
-      <button type="button" className=" text-siriusorange hover:text-opacity-70 inline-flex md:hidden justify-center w-full rounded-md                         border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" 
-      id="menu-button" aria-expanded="true" aria-haspopup="true">
-      Formations
-      <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-      </svg>
-        </button>
-        <div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-    <div class="py-1" role="none">
-      <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Account settings</a>
-      <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Support</a>
-      <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">License</a>
+    <li>
+    <div class="dropdown inline-block relative">
 
-    </div>
-    </div>
-        </li>  
+      <button class=" font-semibold rounded flex md:inline-flex items-center">
+        <Link to="/#formations"  className="  text-siriusorange hover:text-opacity-70">Les formations</Link>
+        <svg class="ml-2 fill-current bg-siriusorange h-4 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+</button>
+
+  <ul class="dropdown-menu absolute bg-white p-5 hidden space-y-4  text-gray-700 pt-1">
+    <li class=""><Link to="/entreprenariat-numerique"  className="  hover:text-siriusorange">Entrepreneuriat numérique et responsable </Link></li>
+    <li class=""><Link to="/communication-visuelle"  className="  hover:text-siriusorange">Communication visuelle </Link></li>
+    <li class=""><Link to="/initiation-métiers-numérique"  className=" hover:text-siriusorange">  Initiation aux métiers du numérique </Link></li>
+    <li class=""><Link to="/initiation-programmation"  className=" hover:text-siriusorange">  Initiation à la programmation </Link></li>
+
+  </ul>
+</div>
+</li>
       <li><Link to="/#témoignages"  className=" text-siriusorange hover:text-opacity-70"> Témoignages</Link></li>
-      <li><Link to="/#inscription"  className=" text-siriusorange hover:text-opacity-70"> Inscription</Link></li>
       <li><Link to="/#contact"  className=" text-siriusorange hover:text-opacity-70"> Contact</Link></li>
 
-
+<li></li>
       </ul>
     </nav>
     <nav>
-      <ul className="md:flex md:space-x-4 mt-10 md:mt-0 ">
-      <li><a src="https://siriushub.be" target="_blank"  className=" text-siriusblue hover:text-opacity-70">Sirius Hub</a></li>
-      <li><a src="https://www.possibles.org/" target="_blank"  className=" text-siriusblue hover:text-opacity-70">MDP</a></li>
+      <ul className="md:flex md:space-x-4 mt-10 md:mt-0 items-center  ">
+        <li> <Link to="/inscription">   <button className="bg-siriusorange text-white mb-4 md:mb-0 text-lg text-bold hover:opacity-90  p-2 rounded"> s'inscrire</button></Link>
+</li>
+      <li><a href="https://siriushub.be"  rel="noreferrer" target="_blank"  className=" text-siriusblue hover:text-opacity-70">Sirius Hub</a></li>
+      <li><a href="https://www.possibles.org/" rel="noreferrer"                 target="_blank"  className=" text-siriusblue hover:text-opacity-70">MDP</a></li>
       </ul>
     </nav>
     </section>

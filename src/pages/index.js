@@ -187,29 +187,30 @@ const IndexPage = ({ data }) => (
           <h2 className=" text-2xl text-4xl text-siriusblue mb-5"> inscription à l'une de nos formations</h2>
           <div dangerouslySetInnerHTML={{ __html: data.datoCmsHomepage.texteInscription }}></div>
 
-          <button className="bg-siriusorange text-white text-bold hover:opacity-90 mt-6 p-2 rounded"> s'inscrire</button>
+          <Link to="/inscription"><button className="bg-siriusorange text-white text-bold hover:opacity-90 mt-6 p-2 rounded"> s'inscrire</button></Link>
         </article>
       </div>
     </section>
     <section className="w-10/12 mt-16 md:mt-32 m-auto place-content-center items-center mt-8  md:gap-24 auto-cols-fr auto-rows-min  grid-cols-2 md:grid flex-col flex ">
 
-      <form className="order-2 md:order-1">
+      <form action="https://formspree.io/f/mrgrrkke"   method="POST" className="order-2 md:order-1">
         <div className="md:flex space-x-20 ">
           <label className="">
             <p>Nom</p>
-            <input type="text" class="border-2 "></input>
+            <input type="text" class="border-2 border-siriusblue rounded "></input>
           </label>
           <label className="">
             <p>mail</p>
-            <input type="mail"  class=" w-12/12 border-2" ></input>
+            <input type="mail"  class=" w-12/12 border-2 border-siriusblue rounded  " ></input>
           </label>
         </div>
         <div className="flex flex-col">
-          <textarea rows="5" className=" w-auto mt-10 border-2 p-2"
+          <textarea rows="5" className=" w-auto mt-10 border-2 border-siriusblue rounded  p-2"
             name="message" id="message" placeholder="votre message" required="">
 
           </textarea>
-          <input className="bg-siriusorange item-center md:w-1/6 w-1/2 text-white text-bold mt-6 p-2 hover:opacity-70 rounded" type="submit" value="envoyer" />
+          <button className="bg-siriusorange item-center md:w-1/6 w-1/2 text-white text-bold mt-6 p-2 hover:opacity-70 rounded" type="submit" value="envoyer" >
+            Envoyer </button>
         </div>
       </form>
       <arcticle className="mb-8 md:mb-0">
@@ -217,6 +218,7 @@ const IndexPage = ({ data }) => (
         <div className="order-1 md:order-2 text-siriusblue text-lg " dangerouslySetInnerHTML={{ __html: data.datoCmsHomepage.texteContact }}></div>
       </arcticle>
 
+    
 
     </section>
   </Layout>
