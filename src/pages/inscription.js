@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => (
 
       </article>
       </section>
-        <div dangerouslySetInnerHTML={{ __html: '<iframe width="540" height="3000" src="https://1b0b29dc.sibforms.com/serve/MUIEAMmTAWWi71u6mQz0y8dtcuvV_7fUkP-cq6dGeZb2g1-PjLu0pTVmJFOMRMZ1ydoryiMmJCFR7G13cIyigLXVIDycEwv4--1lr14qWBdWNv4TIrvCLDEsFggsXAPbjygKye6xo0VZXGP9_2KTYt4N0M_JxfuSWF2Ik95y_AWHcomgQl6dtl-m3j_Htj5p37ltVQYUJ1qFAsRb" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>'}} />;
+        <div className="mt-12" dangerouslySetInnerHTML={{ __html: '<iframe width="540" height="3000" src="https://1b0b29dc.sibforms.com/serve/MUIEAMmTAWWi71u6mQz0y8dtcuvV_7fUkP-cq6dGeZb2g1-PjLu0pTVmJFOMRMZ1ydoryiMmJCFR7G13cIyigLXVIDycEwv4--1lr14qWBdWNv4TIrvCLDEsFggsXAPbjygKye6xo0VZXGP9_2KTYt4N0M_JxfuSWF2Ik95y_AWHcomgQl6dtl-m3j_Htj5p37ltVQYUJ1qFAsRb" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>'}} />;
         </section>
   </Layout>
             )
