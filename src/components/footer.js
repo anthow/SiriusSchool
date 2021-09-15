@@ -18,8 +18,8 @@ const Footer = () => (
       alt="A dinosaur"
       placeholder="blurred"
       layout="fixed"
-      width={200}
-      height={150}
+      width={100}
+      height={75}
     />
 
 <StaticImage
@@ -27,8 +27,8 @@ const Footer = () => (
       alt="A dinosaur"
       placeholder="blurred"
       layout="fixed"
-      width={200}
-      height={100}
+      width={100}
+      height={50}
     />
 
 

@@ -65,7 +65,7 @@ import { useStaticQuery, graphql } from "gatsby"
         <li> <Link to="/inscription">   <button className="bg-siriusorange text-white mb-4 md:mb-0 text-lg text-bold hover:opacity-90  p-2 rounded"> s'inscrire</button></Link>
 </li>
       <li><a href="https://siriushub.be"  rel="noreferrer" target="_blank"  className=" text-siriusblue hover:text-opacity-70">Sirius Hub</a></li>
-      <li><a href="https://www.possibles.org/" rel="noreferrer"                 target="_blank"  className=" text-siriusblue hover:text-opacity-70">Le Monde des Possibles</a></li>
+      <li><a href="https://www.possibles.org/" rel="noreferrer" target="_blank"  className=" text-siriusblue hover:text-opacity-70">Le Monde des Possibles</a></li>
       </ul>
     </nav>
     </section>
