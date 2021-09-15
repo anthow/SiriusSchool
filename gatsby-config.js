@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Sirius School`,
+    description: `Sirius School fait partie de Sirius Hub et est dédié aux formations en développement web (front-end, back-end et web design) et en création numérique (web design, graphisme, marketing digital, création de contenu, communication visuelle…).`,
+    author: `@SiriusCoop`,
+    siteUrl: `https://siriuscoop.be/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
