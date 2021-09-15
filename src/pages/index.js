@@ -71,7 +71,6 @@ const IndexPage = ({ data }) => (
 
         <h3 className="mb-5  text-2xl font-bold  text-white" >{data.datoCmsFormationDeux.titreFormation} </h3>
         <div className="text-white" dangerouslySetInnerHTML={{ __html: data.datoCmsFormationDeux.resumHomepage }}></div>
-        <Link to="/communication-visuelle ">
           <div className="md:flex  mt-8 md:space-x-8">
             <div className="flex  space-x-2 ">
               <FontAwesomeIcon className="text-white" icon={faCalendar} size="1x" /><p className="text-white text-sm"> {data.datoCmsFormationDeux.durE} </p>
@@ -84,6 +83,8 @@ const IndexPage = ({ data }) => (
               <p className="text-white text-sm"> Niveau: {data.datoCmsFormationDeux.niveau}</p>
             </div>
           </div>
+          <Link to="/communication-visuelle ">
+
           <button className=" p-2 px-4 bg-white hover:text-opacity-70 font-bold rounded text-formationdeux mt-5"> en savoir plus</button>
         </Link>
       </article>
@@ -111,7 +112,10 @@ const IndexPage = ({ data }) => (
             <p className="text-white text-sm"> Niveau: {data.datoCmsFormationTroi.niveau}</p>
           </div>
         </div>
+        <Link to="/initiation-métiers-numérique">
+
         <button className=" p-2 px-4 bg-white font-bold mt-5 rounded hover:text-opacity-70 text-formationtrois"> en savoir plus</button>
+        </Link>
       </article>
 
       <article className="order-8  md:order-7 md:mb-0 bg-formationquatre h-full p-10">
@@ -132,7 +136,10 @@ const IndexPage = ({ data }) => (
             <p className="text-white text-sm"> Niveau: {data.datoCmsFormationQuatre.niveau}</p>
           </div>
         </div>
+        <Link to="/initiation-programmation">
+
         <button className="p-2 px-4 bg-white font-bold rounded hover:text-opacity-70 text-formationquatre mt-5"> en savoir plus</button>
+        </Link>
       </article>
       <figure className="order-7 md:order-8">
         <GatsbyImage image={data.datoCmsFormationQuatre.imageFormation.gatsbyImageData} />
