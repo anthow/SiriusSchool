@@ -58,7 +58,17 @@ const CommunicationPage = ({ data }) => (
         <h3 className="mb-5 text-siriusblue  text- text-2xl font-bold" > Conditions d'admission</h3>
     <div className="" dangerouslySetInnerHTML={{ __html: data.datoCmsFormationDeux.condition }}></div>
 
+
+
     </section>
+    <section className="w-10/12 m-auto mt-20"> 
+        <h3 className="mb-5 text-siriusblue  text- text-2xl font-bold" > Séance d'information</h3>
+        <button className="bg-siriusorange text-white mb-4 md:mb-0 text-lg text-bold hover:opacity-90  p-2 rounded"> <a href="https://www.eventbrite.fr/e/172376642177" target="_blank"> s'inscrire à la séance d'information</a></button>
+
+
+
+    </section>
+
     </Layout>
     )
 
