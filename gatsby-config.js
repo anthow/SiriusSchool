@@ -10,6 +10,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-styled-components`,
     `gatsby-remark-responsive-iframe`,
+    `gatsby-plugin-minify`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
