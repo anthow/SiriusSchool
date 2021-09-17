@@ -11,8 +11,8 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-remark-responsive-iframe`,
     `gatsby-plugin-minify`,
-    ` gatsby-plugin-netlify`,
-    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-netlify`,
+    `gatsby-plugin-sitemap`,      
     {
       resolve: `gatsby-source-filesystem`,
       options: {
