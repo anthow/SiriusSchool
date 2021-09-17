@@ -11,7 +11,7 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-remark-responsive-iframe`,
     `gatsby-plugin-minify`,
-    `gatsby-plugin-netlify`,
+    ` gatsby-plugin-netlify`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
