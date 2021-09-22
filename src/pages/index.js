@@ -8,7 +8,7 @@ import { graphql } from "gatsby"
 import {
   faCalendar,
   faEuroSign,
-  
+
 } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -17,7 +17,7 @@ const IndexPage = ({ data }) => (
     <Seo title="Home" />
     <figure className="w-12/12">
       <GatsbyImage image={data.datoCmsHomepage.imageSlider.gatsbyImageData} />
-    </figure> 
+    </figure>
 
     <section className="w-10/12 m-auto place-content-center mt-16 md:mt-32 items-center gap-8 auto-cols-fr auto-rows-min  grid-cols-2 md:grid ">
       <figure>
@@ -30,12 +30,12 @@ const IndexPage = ({ data }) => (
 
         <div dangerouslySetInnerHTML={{ __html: data.datoCmsHomepage.texteSiriusSchool }}></div>
 
-      </article>      
+      </article>
     </section>
     <section className="w-10/12 m-auto">
       <h2 className="mt-16 text-5xl text-siriusblue font-bold mb-5" id="formations">Les formations </h2>
-      <h3 className=" text-3xl text-siriusblue font-bold mb-5" >Ligne du temps </h3>
-      <figure>
+      <h3 className=" hidden text-3xl text-siriusblue font-bold mb-5" >Ligne du temps </h3>
+      <figure className="hidden">
 
         <GatsbyImage image={data.datoCmsHomepage.ligneDuTemps.gatsbyImageData} />
 
@@ -47,47 +47,54 @@ const IndexPage = ({ data }) => (
         <GatsbyImage image={data.datoCmsFormationUne.imageFormation.gatsbyImageData} />
       </figure>
       <article className="bg-formationun font-bold h-full p-10 order-2">
-        <h3 className="mb-5   text-2xl font-bold  text-white" >{data.datoCmsFormationUne.titreFormation} </h3>
+        <h3 className="mb-5   text-3xl font-bold  text-white" >{data.datoCmsFormationUne.titreFormation} </h3>
         <div className="text-white" dangerouslySetInnerHTML={{ __html: data.datoCmsFormationUne.resumHomepage }}></div>
         <div className="md:flex   mt-8 md:space-x-8">
-          <div className=" flex space-x-2 ">
-            <FontAwesomeIcon className="text-white" icon={faCalendar} size="1x" /><p className="text-white font-bold text-sm"> {data.datoCmsFormationUne.durE} </p>
-          </div>  <div className=" flex space-x-2">
+          <div className=" flex items-center space-x-2 ">
+            <FontAwesomeIcon className="text-white" icon={faCalendar} size="2x" />
+            <p className=" m-auto text-white font-bold text-s"> {data.datoCmsFormationUne.durE} </p>
+          </div>
+          <div className=" flex space-x-2  items-center">
 
-            <FontAwesomeIcon className="text-white" icon={faEuroSign} size="1x" /><p className="text-white text-sm font-bold"> Gratuit </p>
+            <FontAwesomeIcon className="text-white" icon={faEuroSign} size="2x" />
+            <p className="text-white m-auto text-s font-bold"> Gratuit </p>
           </div>
           <div className=" flex space-x-2">
 
-            <p className="text-white text-sm font-bold"> Niveau: {data.datoCmsFormationUne.niveau}</p>
+            <p className="m-auto text-white text-s font-bold"> Niveau: {data.datoCmsFormationUne.niveau}</p>
           </div>
         </div>
         <Link to="/entreprenariat-numerique">
 
-          <button className=" p-2 px-4 hover:text-opacity-70 bg-white font-bold rounded text-formationun mt-5"> en savoir plus</button>
+          <button className=" p-2 px-4 hover:text-opacity-70 bg-white font-bold rounded text-formationun mt-8"> En savoir plus</button>
         </Link>
 
       </article>
       <article className=" order-4 md: order-3  bg-formationdeux h-full p-10">
 
-        <h3 className="mb-5  text-2xl font-bold  text-white" >{data.datoCmsFormationDeux.titreFormation} </h3>
+        <h3 className="mb-5  text-3 xl font-bold  text-white" >{data.datoCmsFormationDeux.titreFormation} </h3>
         <div className="text-white" dangerouslySetInnerHTML={{ __html: data.datoCmsFormationDeux.resumHomepage }}></div>
-          <div className="md:flex  mt-8 md:space-x-8">
-            <div className="flex  space-x-2 ">
-              <FontAwesomeIcon className="text-white" icon={faCalendar} size="1x" /><p className="text-white text-sm"> {data.datoCmsFormationDeux.durE} </p>
-            </div>  <div className=" flex space-x-2">
+        <div className="md:flex  mt-8 md:space-x-8">
+          <div className="flex items-center  space-x-2 ">
+            <FontAwesomeIcon className="text-white" icon={faCalendar} size="2x" />
+            <p className="m-auto text-white text-s"> {data.datoCmsFormationDeux.durE} </p>
+          </div>  <div className=" flex items-center space-x-2">
 
-              <FontAwesomeIcon className="text-white" icon={faEuroSign} size="1x" /><p className="text-white text-sm"> gratuit </p>
-            </div>
-            <div className=" flex space-x-2">
-
-              <p className="text-white text-sm"> Niveau: {data.datoCmsFormationDeux.niveau}</p>
-            </div>
+            <FontAwesomeIcon className="text-white" icon={faEuroSign} size="2x" />
+            <p className="m-auto text-white text-s"> gratuit </p>
           </div>
-          <Link to="/communication-visuelle ">
+          <div className=" flex items-center space-x-2">
 
-          <button className=" p-2 px-4 bg-white hover:text-opacity-70 font-bold rounded text-formationdeux mt-5"> en savoir plus</button>
-        </Link>
+            <p className="text-white text-s m-auto"> Niveau: {data.datoCmsFormationDeux.niveau}</p>
+          </div>
+        </div>
+        <Link to="/communication-visuelle ">
+
+          <button className=" p-2 px-4 bg-white hover:text-opacity-70 font-bold rounded text-formationdeux mt-5"> En savoir plus</button>
+        </Link>                               
       </article>
+
+
       <figure className="order-3 md:order-4">
         <GatsbyImage image={data.datoCmsFormationDeux.imageFormation.gatsbyImageData} />
 
@@ -98,47 +105,49 @@ const IndexPage = ({ data }) => (
       </figure>
       <article className="order-6  bg-formationtrois h-full p-10">
 
-        <h3 className="mb-5   text-2xl font-bold  text-white" > {data.datoCmsFormationTroi.titreFormation}  </h3>
+        <h3 className="mb-5   text-3xl font-bold  text-white" > {data.datoCmsFormationTroi.titreFormation}  </h3>
         <div className="text-white" dangerouslySetInnerHTML={{ __html: data.datoCmsFormationTroi.resumHomepage }}></div>
         <div className="md:flex  mt-8 md:space-x-8">
           <div className=" flex space-x-2 ">
-            <FontAwesomeIcon className="text-white" icon={faCalendar} size="1x" /><p className="text-white text-sm"> {data.datoCmsFormationTroi.durE} </p>
+            <FontAwesomeIcon className="text-white" icon={faCalendar} size="2x" />
+            <p className="text-white text-s m-auto"> {data.datoCmsFormationTroi.durE} </p>
           </div>  <div className=" flex space-x-2">
 
-            <FontAwesomeIcon className="text-white" icon={faEuroSign} size="1x" /><p className="text-white text-sm"> gratuit </p>
+            <FontAwesomeIcon className="text-white" icon={faEuroSign} size="2x" />
+            <p className="text-white text-s m-auto"> gratuit </p>
           </div>
           <div className=" flex space-x-2">
 
-            <p className="text-white text-sm"> Niveau: {data.datoCmsFormationTroi.niveau}</p>
+            <p className="text-white text-s m-auto"> Niveau: {data.datoCmsFormationTroi.niveau}</p>
           </div>
         </div>
         <Link to="/initiation-métiers-numérique">
 
-        <button className=" p-2 px-4 bg-white font-bold mt-5 rounded hover:text-opacity-70 text-formationtrois"> en savoir plus</button>
+          <button className=" p-2 px-4 bg-white font-bold mt-5 rounded hover:text-opacity-70 text-formationtrois"> en savoir plus</button>
         </Link>
       </article>
 
       <article className="order-8  md:order-7 md:mb-0 bg-formationquatre h-full p-10">
 
 
-        <h3 className="mb-5  text-2xl font-bold  text-white" > {data.datoCmsFormationQuatre.titreFormation} </h3>
+        <h3 className="mb-5  text-3xl font-bold  text-white" > {data.datoCmsFormationQuatre.titreFormation} </h3>
         <div className="text-white" dangerouslySetInnerHTML={{ __html: data.datoCmsFormationQuatre.resumHomepage }}></div>
 
         <div className="md:flex  mt-8 md:space-x-8">
           <div className="  flex space-x-2 ">
-            <FontAwesomeIcon className="text-white" icon={faCalendar} size="1x" /><p className="text-white text-sm"> {data.datoCmsFormationQuatre.durE} </p>
+            <FontAwesomeIcon className="text-white" icon={faCalendar} size="2x" /><p className="text-white m-auto text-s"> {data.datoCmsFormationQuatre.durE} </p>
           </div>  <div className=" flex space-x-2">
 
-            <FontAwesomeIcon className="text-white" icon={faEuroSign} size="1x" /><p className="text-white text-sm"> gratuit </p>
+            <FontAwesomeIcon className="text-white" icon={faEuroSign} size="2x" /><p className="text-white m-auto text-s"> gratuit </p>
           </div>
           <div className=" flex space-x-2">
 
-            <p className="text-white text-sm"> Niveau: {data.datoCmsFormationQuatre.niveau}</p>
+            <p className="text-white text-s m-auto"> Niveau: {data.datoCmsFormationQuatre.niveau}</p>
           </div>
         </div>
         <Link to="/initiation-programmation">
 
-        <button className="p-2 px-4 bg-white font-bold rounded hover:text-opacity-70 text-formationquatre mt-5"> en savoir plus</button>
+          <button className="p-2 px-4 bg-white font-bold rounded hover:text-opacity-70 text-formationquatre mt-5"> En savoir plus</button>
         </Link>
       </article>
       <figure className="order-7 md:order-8">
@@ -147,7 +156,7 @@ const IndexPage = ({ data }) => (
       </figure>
     </section>
 
-    <h2 className="mt-24 text-center text-siriusblue font-bold text-4xl  mb-12" id="témoignages"> ils sont passé par chez nous  </h2>
+    <h2 className="mt-24 text-center text-siriusblue font-bold text-4xl  mb-12" id="témoignages"> Ils sont passé par chez nous  </h2>
 
     <section className="  w-10/12 m-auto md:grid grid-cols-3 items-start md:gap-x-20 mb-16" >
       <article className="flex flex-col align-center">
@@ -191,26 +200,30 @@ const IndexPage = ({ data }) => (
       <div className=" w-12/12 md:w-10/12 m-auto md:grid grid-cols-2 ">
         <article></article>
         <article className="bg-inscription p-10 " >
-          <h2 className=" text-2xl text-4xl text-siriusblue mb-5"> inscription à l'une de nos formations</h2>
+          <h2 className=" text-2xl text-4xl text-siriusblue mb-5"> Inscription à l'une de nos formations</h2>
           <div dangerouslySetInnerHTML={{ __html: data.datoCmsHomepage.texteInscription }}></div>
 
-          <Link to="/inscription"><button className="bg-siriusorange text-white text-bold hover:opacity-90 mt-6 p-2 rounded"> s'inscrire</button></Link>
+          <Link to="/inscription"><button className="bg-siriusorange text-white  text-lg text-black hover:opacity-90 mt-6 p-2 rounded"> Rejoins-nous </button></Link>
         </article>
       </div>
     </section>
     <section className="w-10/12 mt-16 md:mt-32 m-auto place-content-center items-center mt-8  md:gap-24 auto-cols-fr auto-rows-min  grid-cols-2 md:grid flex-col flex ">
 
-      <form action="https://formspree.io/f/mrgrrkke"   method="POST" className="order-2 md:order-1">
-        <div className="md:flex space-x-20 ">
+      <form action="https://formspree.io/f/mrgrrkke" method="POST" className="order-2 md:order-1">
+        <div className="md:flex spaxe-y-0 space-x-20 ">
           <label className="">
             <p>Nom</p>
             <input type="text" class="border-2 border-siriusblue rounded "></input>
           </label>
           <label className="">
-            <p>mail</p>
-            <input type="mail"  class=" w-12/12 border-2 border-siriusblue rounded  " ></input>
+            <p>Prénom</p>
+            <input type="text" class=" w-12/12 border-2 border-siriusblue rounded  " ></input>
           </label>
         </div>
+        <label className="mt-10">
+            <p className="mt-10">Adresse mail</p>
+            <input type="mail" class=" w-12/12 border-2 border-siriusblue rounded  " ></input>
+          </label>
         <div className="flex flex-col">
           <textarea rows="5" className=" w-auto mt-10 border-2 border-siriusblue rounded  p-2"
             name="message" id="message" placeholder="votre message" required="">
@@ -221,11 +234,11 @@ const IndexPage = ({ data }) => (
         </div>
       </form>
       <arcticle className="mb-8 md:mb-0">
-      <h2 className=" text-5xl text-siriusblue font-bold mb-8 md:mb-16 " id="contact" >contact</h2>
+        <h2 className=" text-5xl text-siriusblue font-bold mb-8 md:mb-16 " id="contact"> Contact</h2>
         <div className="order-1 md:order-2 text-siriusblue text-lg " dangerouslySetInnerHTML={{ __html: data.datoCmsHomepage.texteContact }}></div>
       </arcticle>
 
-    
+
 
     </section>
   </Layout>

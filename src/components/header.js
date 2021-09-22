@@ -36,7 +36,7 @@ import { useStaticQuery, graphql } from "gatsby"
     <nav>
 
       <ul className="md:flex  text-white md:space-x-4 ">
-      <li><Link to="/#school"  className=" text-siriusorange hover:text-opacity-70">Sirius School</Link></li>
+      <li><Link to="/#school"  className=" text-siriusorange hover:text-opacity-70"> Accueil </Link></li>
     <li>
     <div class="dropdown inline-block relative">
 
@@ -55,6 +55,22 @@ import { useStaticQuery, graphql } from "gatsby"
 </div>
 </li>
       <li><Link to="/#témoignages"  className=" text-siriusorange hover:text-opacity-70"> Témoignages</Link></li>
+
+      <div class="dropdown inline-block relative">
+
+<button class=" font-semibold rounded flex md:inline-flex items-center">
+  <Link to="/#"  className="  text-siriusorange hover:text-opacity-70">Partenaires</Link>
+  <svg class="ml-2 fill-current bg-siriusorange h-4 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+</button>
+
+<ul class="dropdown-menu absolute bg-white p-5 hidden space-y-4  text-gray-700 pt-1">
+<li class=""><a href="https://www.youtube.com/channel/UCHmnuhdDfdDtb1YT42mTRUg" rel="noreferrer" target="_blank" className="  hover:text-siriusorange">Sirius Hub </a></li>
+<li class=""><a href="https://www.youtube.com/channel/UCHmnuhdDfdDtb1YT42mTRUg" rel="noreferrer" target="_blank" className="  hover:text-siriusorange">Le monde des possibles </a></li>
+
+</ul>
+</div>
+
+
       <li><Link to="/#contact"  className=" text-siriusorange hover:text-opacity-70"> Contact</Link></li>
 
 <li></li>
@@ -62,10 +78,10 @@ import { useStaticQuery, graphql } from "gatsby"
     </nav>
     <nav>
       <ul className="md:flex md:space-x-4 mt-10 md:mt-0 items-center  ">
-        <li> <Link to="/inscription">   <button className="bg-siriusorange text-white mb-4 md:mb-0 text-lg text-bold hover:opacity-90  p-2 rounded"> s'inscrire</button></Link>
+        <li>  <button className="bg-siriusorange text-white mb-4 md:mb-0 text-xl text-black hover:opacity-90  px-6 py-3 rounded"> S'inscrire</button>
 </li>
-      <li><a href="https://siriushub.be"  rel="noreferrer" target="_blank"  className=" text-siriusblue hover:text-opacity-70">Sirius Hub</a></li>
-      <li><a href="https://www.possibles.org/" rel="noreferrer" target="_blank"  className=" text-siriusblue hover:text-opacity-70">Le Monde des Possibles</a></li>
+      <li><a href="https://siriushub.be/"  rel="noreferrer" target="_blank"  className=" hidden text-siriusblue hover:text-opacity-70">Sirius Hub</a></li>
+      <li><a href="https://www.possibles.org/" rel="noreferrer" target="_blank"  className=" hidden text-siriusblue hover:text-opacity-70">Le Monde des Possibles</a></li>
       </ul>
     </nav>
     </section>
