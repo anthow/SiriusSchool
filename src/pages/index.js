@@ -72,8 +72,8 @@ const IndexPage = ({ data }) => (
       </article>
       <article className=" order-4 md: order-3  bg-formationdeux h-full p-10">
 
-        <h3 className="mb-5  text-3 xl font-bold  text-white" >{data.datoCmsFormationDeux.titreFormation} </h3>
-        <div className="text-white" dangerouslySetInnerHTML={{ __html: data.datoCmsFormationDeux.resumHomepage }}></div>
+<h3 className="mb-5 text-3xl font-bold  text-white" >
+  <div className="text-white" dangerouslySetInnerHTML={{ __html: data.datoCmsFormationDeux.resumHomepage }}></div>
         <div className="md:flex  mt-8 md:space-x-8">
           <div className="flex items-center  space-x-2 ">
             <FontAwesomeIcon className="text-white" icon={faCalendar} size="2x" />
