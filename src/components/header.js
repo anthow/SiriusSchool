@@ -64,8 +64,8 @@ import { useStaticQuery, graphql } from "gatsby"
 </button>
 
 <ul class="dropdown-menu absolute bg-white p-5 hidden space-y-4  text-gray-700 pt-1">
-<li class=""><a href="https://www.youtube.com/channel/UCHmnuhdDfdDtb1YT42mTRUg" rel="noreferrer" target="_blank" className="  hover:text-siriusorange">Sirius Hub </a></li>
-<li class=""><a href="https://www.youtube.com/channel/UCHmnuhdDfdDtb1YT42mTRUg" rel="noreferrer" target="_blank" className="  hover:text-siriusorange">Le monde des possibles </a></li>
+<li class=""><a href="https://siriushub.be/" rel="noreferrer" target="_blank" className="  hover:text-siriusorange">Sirius Hub </a></li>
+<li class=""><a href="https://www.possibles.org/" rel="noreferrer" target="_blank" className="  hover:text-siriusorange">Le monde des possibles </a></li>
 
 </ul>
 </div>
