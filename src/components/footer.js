@@ -9,8 +9,8 @@ import {  faFacebook ,faInstagram, faYoutube } from '@fortawesome/free-brands-sv
 const Footer = () => (
   <footer className="  mt-20 ">
     <section className="w-12/12 py-6 text-white  bg-headblue   " >
-      <div className="w-10/12  m-auto items-center flex flex-col md:flex-row justify-between ">
-      <article className="flex space-x-8 items-center">
+      <div className="w-10/12  m-auto items-center flex flex-col md:flex-row justify-between  ">
+      <article className="flex space-x-8 items-center mb-10 md:mb-0">
         <div className="pr-16 border-r-2 border-white">
         <h4 className="text-xl font-black mb-2"> Sirius School</h4>
         <p> Avenue Rogier 19</p>
@@ -54,9 +54,6 @@ const Footer = () => (
      
       </article>
 </div>
-
-
-
 
 
 
