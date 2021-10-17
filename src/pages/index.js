@@ -49,19 +49,19 @@ const IndexPage = ({ data }) => (
       <article className="bg-formationun font-bold h-full p-10 order-2">
         <h3 className="mb-5   text-3xl font-bold  text-white" >{data.datoCmsFormationUne.titreFormation} </h3>
         <div className="text-white" dangerouslySetInnerHTML={{ __html: data.datoCmsFormationUne.resumHomepage }}></div>
-        <div className="md:flex   mt-8 md:space-x-8">
-          <div className=" flex items-center space-x-2 ">
+        <div className="md:flex  mt-8 md:space-x-8">
+          <div className=" flex mb-8 md:mb-0  items-center space-x-2 ">
             <FontAwesomeIcon className="text-white" icon={faCalendar} size="2x" />
-            <p className=" m-auto text-white font-bold text-s"> {data.datoCmsFormationUne.durE} </p>
+            <p className=" m-auto  text-white font-bold text-s"> {data.datoCmsFormationUne.durE} </p>
           </div>
-          <div className=" flex space-x-2  items-center">
+          <div className=" flex space-x-2  mb-8 md:mb-0 items-center">
 
             <FontAwesomeIcon className="text-white" icon={faEuroSign} size="2x" />
-            <p className="text-white m-auto text-s font-bold"> Gratuit </p>
+            <p className="text-white  m-auto text-s font-bold"> GRATUIT </p>
           </div>
-          <div className=" flex space-x-2">
+          <div className=" flex  space-x-2">
 
-            <p className="m-auto text-white text-s font-bold"> Niveau: {data.datoCmsFormationUne.niveau}</p>
+            <p className="md:m-auto  text-white text-s font-bold"> Niveau: {data.datoCmsFormationUne.niveau}</p>
           </div>
         </div>
         <Link to="/entreprenariat-numerique">
@@ -72,20 +72,20 @@ const IndexPage = ({ data }) => (
       </article>
       <article className=" order-4 md: order-3  bg-formationdeux h-full p-10">
 
-        <h3 className="mb-5  text-3 xl font-bold  text-white" >{data.datoCmsFormationDeux.titreFormation} </h3>
+        <h3 className="mb-5  text-3xl font-bold  text-white" >{data.datoCmsFormationDeux.titreFormation} </h3>
         <div className="text-white" dangerouslySetInnerHTML={{ __html: data.datoCmsFormationDeux.resumHomepage }}></div>
         <div className="md:flex  mt-8 md:space-x-8">
-          <div className="flex items-center  space-x-2 ">
+          <div className="flex items-center mb-8 md:mb-0 space-x-2 ">
             <FontAwesomeIcon className="text-white" icon={faCalendar} size="2x" />
             <p className="m-auto text-white text-s"> {data.datoCmsFormationDeux.durE} </p>
-          </div>  <div className=" flex items-center space-x-2">
+          </div>  <div className=" flex  mb-8 md:mb-0 items-center space-x-2">
 
             <FontAwesomeIcon className="text-white" icon={faEuroSign} size="2x" />
-            <p className="m-auto text-white text-s"> gratuit </p>
+            <p className="m-auto text-white text-s"> GRATUIT </p>
           </div>
           <div className=" flex items-center space-x-2">
 
-            <p className="text-white text-s m-auto"> Niveau: {data.datoCmsFormationDeux.niveau}</p>
+            <p className="text-white text-s md:m-auto"> Niveau: {data.datoCmsFormationDeux.niveau}</p>
           </div>
         </div>
         <Link to="/communication-visuelle ">
@@ -108,22 +108,22 @@ const IndexPage = ({ data }) => (
         <h3 className="mb-5   text-3xl font-bold  text-white" > {data.datoCmsFormationTroi.titreFormation}  </h3>
         <div className="text-white" dangerouslySetInnerHTML={{ __html: data.datoCmsFormationTroi.resumHomepage }}></div>
         <div className="md:flex  mt-8 md:space-x-8">
-          <div className=" flex space-x-2 ">
+          <div className=" mb-8 md:mb-0 flex space-x-2 ">
             <FontAwesomeIcon className="text-white" icon={faCalendar} size="2x" />
             <p className="text-white text-s m-auto"> {data.datoCmsFormationTroi.durE} </p>
-          </div>  <div className=" flex space-x-2">
+          </div>  <div className=" mb-8 md:mb-0 flex space-x-2">
 
             <FontAwesomeIcon className="text-white" icon={faEuroSign} size="2x" />
-            <p className="text-white text-s m-auto"> gratuit </p>
+            <p className="text-white text-s m-auto"> GRATUIT </p>
           </div>
-          <div className=" flex space-x-2">
+          <div className="  flex space-x-2">
 
-            <p className="text-white text-s m-auto"> Niveau: {data.datoCmsFormationTroi.niveau}</p>
+            <p className="text-white text-s md:m-auto"> Niveau: {data.datoCmsFormationTroi.niveau}</p>
           </div>
         </div>
         <Link to="/initiation-métiers-numérique">
 
-          <button className=" p-2 px-4 bg-white font-bold mt-5 rounded hover:text-opacity-70 text-formationtrois"> en savoir plus</button>
+          <button className=" p-2 px-4 bg-white font-bold mt-5 rounded hover:text-opacity-70 text-formationtrois"> En savoir plus</button>
         </Link>
       </article>
 
@@ -134,15 +134,15 @@ const IndexPage = ({ data }) => (
         <div className="text-white" dangerouslySetInnerHTML={{ __html: data.datoCmsFormationQuatre.resumHomepage }}></div>
 
         <div className="md:flex  mt-8 md:space-x-8">
-          <div className="  flex space-x-2 ">
+          <div className=" mb-8 md:mb-0 flex space-x-2 ">
             <FontAwesomeIcon className="text-white" icon={faCalendar} size="2x" /><p className="text-white m-auto text-s"> {data.datoCmsFormationQuatre.durE} </p>
-          </div>  <div className=" flex space-x-2">
+          </div>  <div className=" flex mb-8 md:mb-0 space-x-2">
 
-            <FontAwesomeIcon className="text-white" icon={faEuroSign} size="2x" /><p className="text-white m-auto text-s"> gratuit </p>
+            <FontAwesomeIcon className="text-white" icon={faEuroSign} size="2x" /><p className="text-white m-auto text-s"> GRATUIT </p>
           </div>
           <div className=" flex space-x-2">
 
-            <p className="text-white text-s m-auto"> Niveau: {data.datoCmsFormationQuatre.niveau}</p>
+            <p className="text-white text-s md:m-auto"> Niveau: {data.datoCmsFormationQuatre.niveau}</p>
           </div>
         </div>
         <Link to="/initiation-programmation">
@@ -210,33 +210,32 @@ const IndexPage = ({ data }) => (
     <section className="w-10/12 mt-16 md:mt-32 m-auto place-content-center items-center mt-8  md:gap-24 auto-cols-fr auto-rows-min  grid-cols-2 md:grid flex-col flex ">
 
       <form action="https://formspree.io/f/mrgrrkke" method="POST" className="order-2 md:order-1">
-        <div className="md:flex spaxe-y-0 space-x-20 ">
           <label className="">
             <p>Nom</p>
             <input type="text" class="border-2 border-siriusblue rounded "></input>
           </label>
-          <label className="">
-            <p>Prénom</p>
-            <input type="text" class=" w-12/12 border-2 border-siriusblue rounded  " ></input>
+          <label className="mt-5">
+            <p className="mt-5">Prénom</p>
+            <input type="text" class="  border-2 border-siriusblue rounded  " ></input>
           </label>
-        </div>
-        <label className="mt-10">
-            <p className="mt-10">Adresse mail</p>
-            <input type="mail" class=" w-12/12 border-2 border-siriusblue rounded  " ></input>
+        <label className="mt-5">
+            <p className="mt-5">Adresse mail</p>
+            <input type="mail" class=" w-8/12 border-2 border-siriusblue rounded  " ></input>
           </label>
         <div className="flex flex-col">
-          <textarea rows="5" className=" w-auto mt-10 border-2 border-siriusblue rounded  p-2"
-            name="message" id="message" placeholder="votre message" required="">
+        <p className="mt-5">Message</p>
+          <textarea rows="5" className=" w-auto border-2 border-siriusblue rounded p-2"
+            name="message" id="message" placeholder="" required="">
 
           </textarea>
           <button className="bg-siriusorange item-center md:w-1/6 w-1/2 text-white text-bold mt-6 p-2 hover:opacity-70 rounded" type="submit" value="envoyer" >
             Envoyer </button>
         </div>
       </form>
-      <arcticle className="mb-8 md:mb-0">
-        <h2 className=" text-5xl text-siriusblue font-bold mb-8 md:mb-16 " id="contact"> Contact</h2>
+      <article className="mb-8 md:mb-0">
+        <h2 className=" text-5xl text-siriusblue font-black mb-8 md:mb-16 " id="contact"> Contactez-nous</h2>
         <div className="order-1 md:order-2 text-siriusblue text-lg " dangerouslySetInnerHTML={{ __html: data.datoCmsHomepage.texteContact }}></div>
-      </arcticle>
+      </article>
 
 
 

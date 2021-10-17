@@ -13,7 +13,7 @@ module.exports = {
     `gatsby-plugin-minify`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-sitemap`,      
-    {
+    { 
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
