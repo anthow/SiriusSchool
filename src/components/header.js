@@ -29,15 +29,15 @@ const Header = () => {
       <article className=" p-1 text-white bg-headblue  ">
         <div className="w-9/12 flex justify-between m-auto">
           <section className=" flex space-x-4"> 
-          <div className="flex items-center space-x-2">
+         <a href="tel:+32043770228" className="flex items-center space-x-2">
           <FontAwesomeIcon className="text-white" icon={faPhoneAlt} size="1x" />
-          <span> +32 04 377 02 28</span>
-          </div>
-          <div className="flex items-center space-x-2">
+          <span className="hidden md:block"> +32 04 377 02 28</span>
+          </a>
+          <a href="mailto:info@siriushub.be" className="flex items-center space-x-2">
           <FontAwesomeIcon className="text-white" icon={faEnvelope} size="1x" />
-            <span> info@siriushub.be</span>
-            </div>
-          </section>
+          <span className="hidden md:block"> info@siriushub.be</span>
+            </a>
+            </section>
           <section className=" flex space-x-4 items-center">
           <a href="https://www.facebook.com/siriushub" rel="noreferrer" target="_blank" className=" hover:text-opacity-70">
 
@@ -90,7 +90,7 @@ const Header = () => {
                   </li>
 
 
-                  <a href="https://siriushub.be/all-news/" rel="noreferrer" target="_blank" className=" text-xl text-siriusorange hover:text-opacity-70">news</a>
+                  <a href="https://siriushub.be/all-news/" rel="noreferrer" target="_blank" className=" text-xl text-siriusorange hover:text-opacity-70">News</a>
 
 
 
