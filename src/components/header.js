@@ -53,7 +53,7 @@ const Header = () => {
         </div>
       </article>
       <nav className=" bg-white">
-        <div className="flex items-center justify-between flex-wrap bg-teal-500 pb-2 md:py-6 m-auto  w-11/12 font-bold ">
+        <div className="flex items-center justify-between flex-wrap bg-teal-500 pb-2 md:py-6 m-auto  w-11/12 font-black ">
           <div className="flex items-baseline   -shrink-0 text-white ">
             <figure className="md:hidden">
               <Link to="/#"><GatsbyImage image={data.datoCmsLogo.logoSirius.gatsbyImageData} /></Link>  </figure>
@@ -72,18 +72,18 @@ const Header = () => {
 
                 <ul className="md:flex  text-white md:space-x-8 ">
                   <li>
-                    <div class="dropdown inline-block relative">
+                    <div className="dropdown inline-block relative">
 
-                      <button class=" font-semibold rounded flex md:inline-flex items-center">
+                      <button className=" font-semibold rounded flex md:inline-flex items-center">
                         <Link to="/#formations" className="  text-xl text-siriusorange hover:text-opacity-70">Les formations</Link>
-                        <svg class="ml-2 fill-current text-siriusorange bg-white  h-4 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /> </svg>
+                        <svg className="ml-2 fill-current text-siriusorange bg-white  h-4 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /> </svg>
                       </button>
 
-                      <ul class="dropdown-menu absolute bg-white p-5 hidden space-y-4  text-gray-700 pt-1">
-                        <li class=""><Link to="/entreprenariat-numerique" className="  hover:text-siriusorange">Entrepreneuriat numérique et responsable </Link></li>
-                        <li class=""><Link to="/communication-visuelle" className="  hover:text-siriusorange">Communication visuelle </Link></li>
-                        <li class=""><Link to="/initiation-métiers-numérique" className=" hover:text-siriusorange">  Initiation aux métiers du numérique </Link></li>
-                        <li class=""><Link to="/initiation-programmation" className=" hover:text-siriusorange">  Initiation à la programmation </Link></li>
+                      <ul className="dropdown-menu absolute bg-white p-5 hidden space-y-4  text-gray-700 pt-1">
+                        <li className=""><Link to="/entreprenariat-numerique" className="  hover:text-siriusorange">Entrepreneuriat numérique et responsable </Link></li>
+                        <li className=""><Link to="/communication-visuelle" className="  hover:text-siriusorange">Communication visuelle </Link></li>
+                        <li className=""><Link to="/initiation-métiers-numérique" className=" hover:text-siriusorange">  Initiation aux métiers du numérique </Link></li>
+                        <li className=""><Link to="/initiation-programmation" className=" hover:text-siriusorange">  Initiation à la programmation </Link></li>
 
                       </ul>
                     </div>
