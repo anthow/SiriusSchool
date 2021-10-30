@@ -43,7 +43,7 @@ const IndexPage = ({ data }) => (
 
     <section className="mt-20 w-12/12  md:w-10/12 m-auto place-content-center items-center  auto-rows-min md:gap-y-20 md:gap-x-20 auto-cols-fr auto-rows-min  grid-cols-2 md:grid flex flex-col ">
       <figure className="order-1">
-        <GatsbyImage image={data.datoCmsFormationUne.imageFormation.gatsbyImageData} alt={data.datoCmsFormationUne.imageFormation.alt} />
+        <GatsbyImage image={data.datoCmsFormationUne.imageFormation.gatsbyImageData} alt={data.datoCmsFormationUne.imageFormation.alt} className="h-full" />
       </figure>
       <article className="bg-formationun h-full p-10 order-2">
         <h3 className="mb-5   text-3xl font-black  text-white" >{data.datoCmsFormationUne.titreFormation} </h3>
@@ -95,7 +95,7 @@ const IndexPage = ({ data }) => (
 
 
       <figure className="order-3 md:order-4">
-        <GatsbyImage image={data.datoCmsFormationDeux.imageFormation.gatsbyImageData} alt={data.datoCmsFormationDeux.imageFormation.alt} />
+        <GatsbyImage image={data.datoCmsFormationDeux.imageFormation.gatsbyImageData} alt={data.datoCmsFormationDeux.imageFormation.alt} className="height-full" />
 
       </figure>
       <figure className="order-5">
@@ -299,7 +299,7 @@ export const query = graphql`
         alt
         title
         gatsbyImageData(width:800
-          height:600)
+          height:650)
       }
             resumHomepage
       }
