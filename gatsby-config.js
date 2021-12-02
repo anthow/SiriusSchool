@@ -7,8 +7,8 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-image`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-image`,
     `gatsby-remark-responsive-iframe`,
     `gatsby-plugin-minify`,
     `gatsby-plugin-netlify`,
