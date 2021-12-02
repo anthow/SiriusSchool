@@ -44,6 +44,15 @@ module.exports = {
         DEFAULT:'#FFFFFF',
         dark:'#FFFFFF',
       },
+      headblue :{
+        light:'#2f437f',
+        DEFAULT:'#2f437f',
+        dark:'#2f437f',
+      }, footerblue :{
+        light:'#6e79a6',
+        DEFAULT:'#6e79a6',
+        dark:'#6e79a6',
+      },
       
     },},
   },

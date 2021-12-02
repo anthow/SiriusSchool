@@ -9,12 +9,12 @@ const IndexPage = ({ data }) => (
     <Layout>
         <Seo title="Inscription" />
         <section className="<w-10/12 m-auto">
-        <h1 className="w-10/12 m-auto mt-16 text-5xl text-siriusblue font-bold mb-5" > inscription 2021 </h1>
+        <h1 className="w-10/12 m-auto mt-16 text-5xl text-siriusblue font-black mb-5" > Inscription 2021 </h1>
         <section className="mt-20 w-12/12  md:w-10/12 m-auto place-content-center items-center  auto-rows-min md:gap-y-20 md:gap-x-20 auto-cols-fr auto-rows-min  grid-cols-2 md:grid flex flex-col ">
       <figure className="order-1">
-        <GatsbyImage image={data.datoCmsPageInscription.imageFormation.gatsbyImageData} />
+        <GatsbyImage image={data.datoCmsPageInscription.imageFormation.gatsbyImageData} alt={data.datoCmsPageInscription.imageFormation.alt} />
       </figure>
-      <article className="bg-formationun font-bold h-full p-10 order-2">
+      <article className="bg-formationun font-black h-full p-10 order-2">
         <div className="text-white" dangerouslySetInnerHTML={{ __html: data.datoCmsPageInscription.texteFormation}}></div>
       
 
@@ -29,6 +29,7 @@ const IndexPage = ({ data }) => (
             {
               datoCmsPageInscription {
                 imageFormation {
+                  alt
                   gatsbyImageData
                 }
                 texteFormation
