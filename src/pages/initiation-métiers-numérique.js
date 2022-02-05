@@ -13,7 +13,7 @@ import {
 const CommunicationPage = ({ data }) => (
     <Layout>
     <Seo title="Home" />
-<section className=" mt-8 md:mt-20 w-10/12 m-auto place-content-center items-center auto-cols-fr auto-rows-min md:gap-y-20 md:gap-x-20 auto-cols-fr auto-rows-min  grid-cols-2 md:grid ">
+<section className=" mt-8 md:mt-20 w-10/12 m-auto place-content-top auto-cols-fr auto-rows-min md:gap-y-20 md:gap-x-20 auto-cols-fr auto-rows-min  grid-cols-2 md:grid ">
 <figure>
 <GatsbyImage className="mb-4 md:mb-0" image={data.datoCmsFormationTroi.imageFormation.gatsbyImageData} alt={data.datoCmsFormationTroi.imageFormation.alt}/>
 </figure>
